@@ -1,6 +1,6 @@
-FROM node:14.5.0-alpine3.10
+FROM node:14.11.0-alpine3.12
 
-RUN npm install -g openapi-examples-validator@3.0.3
+RUN npm install -g openapi-examples-validator@4.0.1
 
 ENTRYPOINT ["openapi-examples-validator"]
 CMD ["--help"]
